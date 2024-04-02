@@ -1,0 +1,119 @@
+.postel {
+  width: 93%;
+  background-image: url(../assets/postal.jpg);
+  cursor: pointer;
+  height: 60vh;
+  background-position: center;
+  background-size: contain;
+  margin: auto;
+  // background-repeat: no-repeat;
+}
+
+.more {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  align-items: center;
+  position: relative;
+  top: 2rem;
+  font-weight: 600;
+  font-size: 17px;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem;
+  justify-content: center;
+  .home_section {
+    width: 80%;
+    padding: 1rem;
+    background-color: #eee;
+    color: black;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    top: 3rem;
+    transition: all 0.5s;
+    &:hover {
+      box-shadow: 4px 0 10px 10px rgba(0, 0, 0, 0.1);
+      transform: translateY(-7px);
+    }
+
+    .like {
+      display: flex;
+      gap: 2rem;
+      cursor: pointer;
+      svg {
+        font-size: 1.3rem;
+        transition: all 0.5s;
+        &:hover {
+          // background-color: white;
+          border-radius: 50%;
+          height: 30px;
+          width: 30px;
+        }
+      }
+    }
+
+    .AddCart_btn {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      svg {
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+          transform: rotate(20deg);
+        }
+      }
+    }
+    img {
+      mix-blend-mode: darken;
+      max-width: 100%;
+      height: 40vh;
+      cursor: pointer;
+      object-fit: contain;
+      margin: auto;
+    }
+    h2 {
+      letter-spacing: 1px;
+      margin-top: 10px;
+      font-size: 19px;
+      text-align: center;
+    }
+    p {
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .home {
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    .home_section {
+      width: 85%;
+
+      img {
+        height: 40vh;
+        object-fit: contain;
+      }
+    }
+  }
+  .postel {
+    width: 100%;
+    height: 50vh;
+  }
+}

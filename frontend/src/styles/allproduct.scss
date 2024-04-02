@@ -1,0 +1,110 @@
+.procuct_card_container {
+  box-shadow: 3px 3px 3px 4px rgb(218, 217, 217);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  margin: auto;
+  margin-top: 5rem;
+  align-items: center;
+  .image_container_left {
+    padding: 10px;
+    width: 100%;
+    img {
+      width: 70%;
+      height: 40vh;
+      object-fit: contain;
+      user-select: none;
+      cursor: pointer;
+      mix-blend-mode: darken;
+    }
+  }
+
+  .right_content {
+    padding: 1rem;
+
+    .product_name {
+      h2 {
+        font-size: 26px;
+      }
+    }
+
+    .product_price {
+      margin-top: 6px;
+      h4 {
+        font-size: 1.3rem;
+      }
+    }
+
+    
+    .like {
+        display: flex;
+        gap: 2rem;
+        cursor: pointer;
+        svg {
+          font-size: 1.3rem;
+          transition: all 0.5s;
+          &:hover {
+            // background-color: white;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+          }
+        }
+      }
+  }
+
+  .product_btn {
+    margin-top: 13px;
+    button {
+      padding: 7px 30px;
+      background-color: #222;
+      font-size: 18px;
+      border: 0;
+      outline: 0;
+      border-radius: 5px;
+      color: white;
+      // float: right;
+      cursor: pointer;
+      svg {
+        font-size: 1.9rem;
+        transition: all 0.5s;
+        &:hover {
+          transform: rotate(20deg);
+        }
+      }
+    }
+  }
+}
+
+// ----------------------------//Media quary------------------------------
+
+@media only screen and (max-width: 1100px) {
+  .procuct_card_container {
+    grid-template-columns: 1fr 1fr;
+    overflow-x: auto;
+    width: 90%;
+    .image_container_left {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+    .right_content {
+      .product_name {
+        h2 {
+          font-size: 18px;
+        }
+      }
+      .product_btn {
+        margin-top: 13px;
+        button {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

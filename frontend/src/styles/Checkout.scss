@@ -1,0 +1,65 @@
+/* Default styles */
+.checkout-container {
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.user-details input,
+.user-details textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.user-details textarea {
+  resize: vertical;
+}
+
+.order-summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+.order-summary li {
+  margin-bottom: 5px;
+}
+
+button {
+  background-color: crimson;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin-top: 4px;
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .checkout-container {
+    padding: 10px;
+    width: 95%;
+  }
+
+  .user-details input,
+  .user-details textarea {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,91 @@
+// .order_container_list {
+//   display: flex;
+//   flex-direction: column;
+//   padding: 10px;
+//   overflow-y: auto;
+//   height: 80vh;
+//   background-color: #eee;
+//   width: 60%;
+//   margin: 1rem;
+//   h3 {
+//     color: orangered;
+//     padding: 6px;
+//   }
+//   //   border-radius: 5px;
+
+//   .order_details {
+//     // margin: 1rem;
+//     overflow-x: auto;
+//     h3 {
+//       color: blueviolet;
+//       padding: 6px;
+//     }
+//     h4 {
+//       color: darkblue;
+//       padding: 6px;
+//       font-size: 19px;
+//     }
+//     p {
+//       font-weight: 600;
+//       padding: 6px;
+//     }
+//   }
+
+//   .confirm_order_details {
+//     // display: flex;
+//     // align-items: center;
+//     .allData_container {
+//       padding: 6px;
+//       width: 100%;
+//       img {
+//         width: 20%;
+//         mix-blend-mode: darken;
+//         cursor: pointer;
+//       }
+//     }
+//     .delete_product {
+//       button {
+//         padding: 8px 15px;
+//         margin: 0 6px;
+//         background-color: orangered;
+//         border-radius: 30px;
+//         border: 0;
+//         outline: 0;
+//         color: whitesmoke;
+//         font-size: 15px;
+//         cursor: pointer;
+//         &:hover {
+//           background-color: crimson;
+//         }
+//       }
+//     }
+//   }
+// }
+// select {
+//   text-transform: uppercase;
+//   width: 25%;
+//   margin-top: 10px;
+//   padding: 10px;
+//   font-size: 16px;
+//   border: 1px solid #ccc;
+//   border-radius: 5px;
+//   background-color: #fff;
+//   appearance: none;
+//   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 8.293a1 1 0 011.414 0L10 9.586l1.293-1.293a1 1 0 111.414 1.414l-2 2a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414zM8 13a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>');
+//   background-repeat: no-repeat;
+//   background-position: right 10px top 50%;
+//   cursor: pointer;
+//   &:focus {
+//     outline: none;
+//     border-color: #007bff;
+//     box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+//   }
+// }
+// @media screen and (max-width: 1100px) {
+//   .order_container_list {
+//     width: 90%;
+//   }
+//   select {
+//     width: 60%;
+//   }
+// }

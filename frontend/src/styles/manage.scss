@@ -1,0 +1,140 @@
+/* Example CSS for Product Management Table */
+
+.manage_container {
+  margin-top: 20px;
+  overflow-x: auto;
+  .search_baar {
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 1px;
+    padding: 7px;
+    margin-top: 0;
+    .bar {
+      display: flex;
+      gap: 1rem;
+      input {
+        width: 95%;
+        padding: 10px;
+        border: 0;
+        outline: 0;
+        border-radius: 5px;
+      }
+      img {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+  .category_filter {
+    select {
+      text-transform: uppercase;
+      width: 95%;
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      appearance: none;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 8.293a1 1 0 011.414 0L10 9.586l1.293-1.293a1 1 0 111.414 1.414l-2 2a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414zM8 13a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>');
+      background-repeat: no-repeat;
+      background-position: right 10px top 50%;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+      }
+    }
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  .removeProduct {
+    font-size: 20px;
+  }
+
+  .orderOption {
+    text-transform: uppercase;
+    width: 95%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 8.293a1 1 0 011.414 0L10 9.586l1.293-1.293a1 1 0 111.414 1.414l-2 2a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414zM8 13a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+    }
+  }
+  svg {
+    font-size: 1rem;
+  }
+  img {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    object-fit: contain;
+  }
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.adminContainer {
+  display: flex;
+}
+
+.adminContainer main {
+  flex: 1;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  th,
+  td {
+    padding: 8px;
+    font-size: 14px;
+    .orderOption {
+      width: 25vh;
+      select {
+      }
+    }
+  }
+
+  img {
+    max-width: 80px; /* Decrease image size on smaller screens */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  th,
+  td {
+    padding: 6px;
+    font-size: 12px;
+  }
+  img {
+    max-width: 60px; /* Further decrease image size on smallest screens */
+  }
+}
